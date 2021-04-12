@@ -1,0 +1,20 @@
+{
+  "name": "expo-radio-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expo",
+    "radio",
+    "button",
+    "expo-radio-button"
+  ],
+  "author": "Frank Pena",
+  "license": "ISC"
+}
