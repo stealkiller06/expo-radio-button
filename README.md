@@ -4,6 +4,8 @@
 
 expo-radio-button is a beautiful and flexible radio button component
 
+[DEMO](https://snack.expo.io/@stealkiller06/expo-radio-button)
+
 ## Installation
 ```sh
 npm i expo-radio-button

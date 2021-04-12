@@ -1,9 +1,9 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, TouchableOpacity } from 'react-native'
 
 
 export default function ExpoRadioButton(props) {
-    const { selected, value,size, onSelected, children, containerStyle,radioStyle,radioBackground } = props;
+    const { selected, value,size, onSelected, children, containerStyle,radioStyle,radioBackground,childrenStyle } = props;
 
 
     function isSelected() {
@@ -43,7 +43,7 @@ export default function ExpoRadioButton(props) {
                 ></View>
             </View>
 
-            <View style={{ marginLeft: 3 }}>
+            <View style={{ marginLeft: 3,...childrenStyle }}>
                 {children}
             </View>
 
