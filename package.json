@@ -1,6 +1,6 @@
 {
   "name": "expo-radio-button",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -15,6 +15,10 @@
     "button",
     "expo-radio-button"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stealkiller06/expo-radio-button"
+  },
   "author": "Frank Pena",
   "license": "ISC"
 }
