@@ -50,7 +50,7 @@ export default function App() {
 | radioStyle | Radio Button Style |
 | radioBackground | default blue|
 
-## methods
+## Events
 | Property | Description |
 | ------ | ------ |
 | onSelected | method called when pressed |
