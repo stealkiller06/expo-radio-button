@@ -61,11 +61,11 @@ export default function App() {
 
 ## Properties RadioButtonItem
 
-| Property | Description  |
-| -------- | ------------ | ------------ |
-| value    | option value |
-| label    | (string      | JSX.element) |
-| style    | View Style   |
+| Property | Description             |
+| -------- | ----------------------- |
+| value    | option value            |
+| label    | (string or JSX.element) |
+| style    | View Style              |
 
 ## License
 
