@@ -123,10 +123,10 @@ export function RadioButtonItem(props) {
 RadioButtonGroup.propTypes = {
   selected: PropTypes.any,
   onSelected: PropTypes.func,
-  containerStyle: ViewPropTypes.style,
-  containerOptionStyle: ViewPropTypes.style,
-  radioStyle: ViewPropTypes.style,
-  labelStyle: ViewPropTypes.style,
+  containerStyle: PropTypes.any,
+  containerOptionStyle: PropTypes.any,
+  radioStyle: PropTypes.any,
+  labelStyle: PropTypes.any,
   radioBackground: PropTypes.string,
   size: PropTypes.number,
 };
@@ -134,7 +134,7 @@ RadioButtonGroup.propTypes = {
 RadioButtonItem.propTypes = {
   value: PropTypes.any,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  style: ViewPropTypes.style,
+  style: PropTypes.any,
 };
 
 export default RadioButtonGroup;
