@@ -7,55 +7,65 @@ expo-radio-button is a beautiful and flexible radio button component
 [DEMO](https://snack.expo.io/@stealkiller06/expo-radio-button)
 
 ## Installation
-```sh
-npm i expo-radio-button
-```
 
+```sh
+npm i expo-radio-button --save
+yarn add expo-radio-button
+```
 
 ## Example
 
 ```javascript
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import RadioButton from 'expo-radio-button'
-
+import React, { useState } from "react";
+import { Text, View } from "react-native";
+import RadioButtonGroup, { RadioButtonItem } from "expo-radio-button";
 export default function App() {
-  const [current, setCurrent] = useState("option 1")
+  const [current, setCurrent] = useState("test");
 
   return (
-    <View style={styles.container}>
-
-      <RadioButton value="option 1"
+    <View style={{ marginTop: 50 }}>
+      <RadioButtonGroup
         containerStyle={{ marginBottom: 10 }}
-        selected={current} onSelected={(value) => setCurrent(value)} 
-        radioBackground="green" >
-        <Text>Option 1</Text>
-      </RadioButton>
-      <RadioButton value="option 2" selected={current} onSelected={(value) => setCurrent(value)} radioBackground="green" >
-        <Text>Option 2</Text>
-      </RadioButton>
+        selected={current}
+        onSelected={(value) => setCurrent(value)}
+        radioBackground="green"
+      >
+        <RadioButtonItem value="test2" label="Example with string" />
+        <RadioButtonItem
+          value="test"
+          label={
+            <Text style={{ color: "red" }}>Example passing React Element</Text>
+          }
+        />
+      </RadioButtonGroup>
     </View>
   );
 }
 ```
 
-## Properties
-| Property | Description |
-| ------ | ------ |
-| selected | Current value selected |
-| value | option value |
-| size | (integer) Radio button size |
-| containerStyle | Container Style |
-| radioStyle | Radio Button Style |
-| radioBackground | default blue|
+## Properties RadioButtonGroup
 
-## Events
-| Property | Description |
-| ------ | ------ |
+| Property        | Description                 |
+| --------------- | --------------------------- |
+| selected        | Current value selected      |
+| size            | (integer) Radio button size |
+| containerStyle  | Container Style             |
+| radioStyle      | Radio Button Style          |
+| radioBackground | default blue                |
+
+## Events RadioButtonGroup
+
+| Property   | Description                |
+| ---------- | -------------------------- |
 | onSelected | method called when pressed |
 
+## Properties RadioButtonItem
 
+| Property | Description  |
+| -------- | ------------ | ------------ |
+| value    | option value |
+| label    | (string      | JSX.element) |
+| style    | View Style   |
 
 ## License
 
